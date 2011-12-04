@@ -1,0 +1,13 @@
+int running = 0;
+int pressed = 0;
+
+#include "touch_pressed.h"
+#include "running_state.h"
+#include "program.h"
+
+task main() {
+  SetSensorTouch(IN_4);
+	while(true) {
+		runProgram();
+	}
+}
